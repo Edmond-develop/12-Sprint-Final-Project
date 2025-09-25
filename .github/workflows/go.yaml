@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      _ name: Run Unit Tests
+      - name: Run Unit Tests
         run: GOOS=linux GOARCH=amd64 go test
 
       - name: Vet
